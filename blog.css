@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 500;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(/images/bg_white.jpg);
+}
+
+
+
+
+/* Styling header and navigation */
+header {
+    background-color: #018DA5;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #00f4a3;
+    background-size: cover;
+    width: 10px;
+    border-radius: 15px;
+}
+
+#NightModeBlog {
+    background-image: url(/images/night-mode-button-bg.jpg);
+    background-size: cover;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 300px;
+}
+#NightModeBlog:hover {
+    background-image: url(/images/whitemode-button-bg.jpg);
+    background-size: cover;
+    width: 100px;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* css halaman blog */
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.hero {
+    height: 280px;
+    background-image:url(/images/751fe387da11d5d83d3301d2d28001fb.jpg) ;
+    background-size: cover;
+    background-position: 0 -100px;
+    border-bottom: 5px solid #67DDAB;
+    border-top: 5px solid #005564;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.content .penulis {
+    font-size: 15px;
+    margin-top: -15px;
+}
+
+.content .penulis a {
+    color: #80DAEB;
+    text-decoration: none;
+}
+
+.content p {
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.blog_darkmode {
+    margin-left: px;
+}
+
+/* Styling footer */
+footer {
+    width: 100%;
+    background-color: #018DA5;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+/* darkmode css */
+
+.dark-mode2 {
+    background-image: url(/images/bg-black.jpg);
+    background-size: cover;
+     color: black;
+ }
+
+ .dark-mode2 .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    
+ }
+
+ .dark-mode2 .container {
+    border-left: 3px solid #005564;
+    border-right: 3px solid #005564;
+ }
+ 
+ .dark-mode2 header {
+     background-color: #005564;
+ }
+ 
+ .dark-mode2 h1 {
+     color: white;
+ }
+ 
+ .dark-mode2 h1,
+ .dark-mode2 h2 {
+     color: rgb(255, 255, 255);
+ }
+ 
+ .dark-mode2 p {
+     color: white;
+     line-height: 1.6;
+     margin-bottom: 15px;
+ }
+ 
+ .dark-mode2 footer {
+     background-color: #005564;
+ }
+ 
+ .dark-mode2 #NightModeBlog {
+     background-image: url(/images/whitemode-button-bg.jpg);
+     background-size: cover;
+     color: black;
+     width: 100px;
+     height: 30px;
+     border-radius: 15px;
+     cursor: pointer;
+     margin-left: 300px;
+ }
+ 
+ .dark-mode2 #NightModeBlog:hover {
+     background-image: url(/images/night-mode-button-bg.jpg);
+     background-size: cover;
+     width: 100px;
+     color: #fff;
+     cursor: pointer;
+ }
+
+
+
+
+ /* Tampilan iPhone X (mode potret) */
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 20px 0;
+        font-size: 12px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto img {
+        width: 100%;
+        margin: 0;
+    }
+
+    #NightModeBlog {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .fotokontak img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+/* Tampilan ipad  (mode potret) */
+@media only screen and (max-width: 575px) and (max-height: 812px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 20px 0;
+        font-size: 12px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto img {
+        width: 100%;
+        margin: 0;
+    }
+
+    #NightModeBlog {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .fotokontak img {
+        width: 100%;
+        margin: 0;
+    }
+}

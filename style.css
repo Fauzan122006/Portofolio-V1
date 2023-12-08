@@ -1,0 +1,544 @@
+
+* {
+    margin: 0;
+    padding: 500;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(/images/bg_white.jpg);
+}
+/* Styling header and navigation */
+.header {
+    background-color: #018DA5;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header .judul {
+    padding: 3px;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header  ul li {
+    display: inline;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header  a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ .header ul li a:hover {
+    background-color: #00f4a3;
+    background-size: cover;
+    width: 10px;
+    border-radius: 15px;
+}
+
+/* Styling main content */
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.pembungkus {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+}
+
+.foto img {
+    width: 300px;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 15px;
+    flex: 1;
+    margin-top: 30px;
+}
+
+.informasi {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    height: 400px;
+    line-height: 1.6;
+    color: #fff;
+    margin-right: 50px;
+    margin-top: 30px;
+    font-family: Arial;
+}
+
+.informasi h2 {
+    background-color: #67DDAB;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.pendidikan {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    height: 400px;
+    color: #fff;
+    margin-top: 30px;
+    font-family: Arial;
+}
+
+.pendidikan h2 {
+    background-color: #80DAEB;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#NightModeButton {
+   margin-right: 10px;
+   position: relative;
+   bottom: 25px;
+   background-image: url(/images/night-mode-button-bg.jpg);
+   background-size: cover;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#NightModeButton:hover {
+    background-image: url(/images/whitemode-button-bg.jpg);
+    background-size: cover;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styling proyek terbaru */
+.proyek-terbaru {
+    margin-top: 40px;
+}
+
+.proyek-terbaru h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styling footer */
+footer {
+    width: 100%;
+    background-color: #018DA5;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* darkmode css */
+
+.dark-mode {
+   background-image: url(/images/bg-black.jpg);
+   background-size: cover;
+    color: white;
+}
+
+.dark-mode .header {
+    background-color: #005564;
+}
+
+.dark-mode .informasi {
+    background-color: #018DA5;
+}
+
+.dark-mode .informasi h2 {
+    color: #005564;
+}
+
+.dark-mode .pendidikan{
+    background-color: #80DAEB;
+}
+
+.dark-mode .pendidikan h2 {
+    color: #005564;
+    background-color: #67DDAB;
+}
+
+.dark-mode .SocialMedia {
+    background-color: #80DAEB;
+}
+.dark-mode h1 {
+    color: white;
+}
+
+.dark-mode h1,
+.dark-mode h2 {
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode p {
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.dark-mode .card-body {
+    background-color: #018DA5;
+}
+
+.dark-mode .card-footer {
+    background-color: #018DA5;
+}
+
+.dark-mode footer {
+    background-color: #005564;
+}
+
+.dark-mode #NightModeButton {
+    background-image: url(/images/whitemode-button-bg.jpg);
+    background-size: cover;
+    color: black;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+   
+}
+
+.dark-mode #NightModeButton:hover {
+    background-image: url(/images/night-mode-button-bg.jpg);
+    background-size: cover;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+/* css halaman contact */
+.fotokontak img {
+    width: 200px;
+    height: 400px;
+    margin-left: 20px;
+    border-radius: 15px;
+    
+}
+
+table tr td {
+    padding-bottom: 5px;
+}
+
+table tr td a {
+   text-decoration: none;
+   color: black;
+   border-radius: 5px;
+   background-color: #feffff;
+   width: 600px;
+   text-align: center;
+}
+/* .SocialMedia a {
+    background-color: #fff;
+    color: #000;
+} */
+
+.SocialMedia {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    height: 400px;
+    color: #fff;
+    font-family: Arial;
+}
+
+.SocialMedia h1 {
+    background-color: #80DAEB;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+/* css halaman certificate */
+.certificate {
+    width: 900px;
+    margin-left: 20px;
+    margin-bottom: 155px;
+}
+
+/* Responsive design for larger screens (desktop and laptops) */
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 20px;
+        flex-direction: row; /* Restore the original layout */
+    }
+
+    nav ul {
+        text-align: right; /* Adjust the navigation alignment */
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 20px; /* Wider spacing for navigation items */
+    }
+
+    .main {
+        flex-direction: row; /* Restore the original layout */
+        align-items: center;
+    }
+
+    .foto img {
+        width: 300px;
+        height: auto;
+        margin-left: 50px;
+        border-radius: 15px;
+        flex: 1;
+        margin-top: 30px;
+    }
+
+    .profil {
+        display: flex;
+        align-items: center;
+    }
+
+    .informasi, .pendidikan {
+        max-width: 600px;
+        margin: 0 20px; /* Wider margins for larger screens */
+        font-size: 16px; /* Increase the font size */
+    }
+
+    #NightModeButton {
+        margin-left: 1300px; /* Restore the original position */
+        margin-top: 0;
+    }
+
+    .fotokontak img {
+        width: 600px;
+        height: 400px;
+        margin-left: 20px;
+        border-radius: 15px;
+        flex: 1;
+    }
+
+    .pembungkuscontact {
+        margin-bottom: 65px;
+        margin-top: 65px;
+    }
+
+    /* You can add more desktop-specific styles as needed */
+
+    .proyek-terbaru h2 {
+        font-size: 28px; /* Increase the font size for headings */
+        margin-bottom: 30px; /* Wider spacing for heading */
+    }
+
+    .SocialMedia h1 {
+        font-size: 24px; /* Increase the font size for headings */
+        width: 300px;
+        height: 50px; /* Adjust heading size for SocialMedia */
+        text-align: center;
+        border-radius: 20px; /* Larger border radius */
+    }
+}
+
+
+/* Tampilan iPhone X (mode potret) */
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .profil {
+        display: block;
+        flex-direction: column;
+    }
+
+    .informasi, .pendidikan {
+        max-width: 100%;
+        margin: 20px 0;
+        font-size: 12px;
+    }
+
+    #NightModeButton {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .fotokontak img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+/* Tampilan iPad (mode potret) */
+@media only screen and (max-width: 575px) and (max-height: 912px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .profil {
+        display: block;
+        flex-direction: column;
+    }
+
+    .informasi, .pendidikan {
+        max-width: 100%;
+        margin: 20px 0;
+        font-size: 12px;
+    }
+
+    #NightModeButton {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .fotokontak img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Base styles (for larger screens) */
+/* ... Your existing CSS ... */
+
+/* Media Query for Tablets */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce the base font size */
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .header ul {
+        text-align: center;
+        margin: auto;
+    }
+
+    .header ul li {
+        font-size: 14px;
+    }
+
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+
+    .informasi,
+    .pendidikan {
+        width: 100%; /* Take full width on smaller screens */
+        margin: 20px 0; /* Add spacing between sections */
+    }
+
+    .informasi p {
+        font-size: 10px;
+    }
+
+   
+    .informasi h1,
+    .pendidikan h1 {
+        width: auto; /* Adjust the heading width */
+        font-size: 18px;
+    }
+
+    #NightModeButton {
+        bottom: 0px;
+    }
+
+    .certificate {
+        width: 300px;
+    }
+}
+
+/* Media Query for Smartphones */
+@media screen and (max-width: 580px) {
+    body {
+        font-size: 12px; /* Further reduce the base font size for smaller screens */
+    }
+
+    .header {
+        padding: 6px;
+    }
+
+    .header ul li {
+        font-size: 12px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .informasi,
+    .pendidikan {
+        margin: 10px 0;
+    }
+
+    .informasi p {
+        font-size: 7.5px;
+    }
+
+    .informasi h1,
+    .pendidikan h1 {
+        font-size: 16px;
+    }
+
+}

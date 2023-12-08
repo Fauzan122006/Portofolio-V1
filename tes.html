@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Postingan Dev.to</title>
+</head>
+
+<body>
+    <h1>Daftar Postingan dari Dev.to</h1>
+    <ul id="post-list"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const postList = document.getElementById('post-list');
+
+            axios.get('https://dev.to/api/articles', {
+                headers: {
+                    'api-key': 'mdgJqr523eTenNzHVB9NVr3W', // Ganti dengan API key Anda
+                },
+            })
+                .then(response => {
+                    const articles = response.data;
+                    articles.forEach(article => {
+                        const listItem = document.createElement('li');
+                        const link = document.createElement('a');
+                        link.href = article.url;
+                        link.textContent = article.title;
+                        listItem.appendChild(link);
+                        postList.appendChild(listItem);
+                    });
+                })
+                .catch(error => {
+                    console.error('Terjadi kesalahan:', error);
+                });
+        });
+    </script>
+</body>
+
+</html>
